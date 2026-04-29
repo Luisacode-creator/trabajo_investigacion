@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo de Investigación</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><i class="fa-solid fa-heart-circle-plus"></i></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!--Barra de navegación donde está los links-->
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Trabajo 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./viws/trabajo2.html">Trabajo 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./viws/trabajo3.html">Trabajo 3</a>
+                            </li>
+                            
+                        </ul> 
+                        <form class="d-flex search" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+        </nav>
+    </header>
+
+    <main class="main-1">
+        <h1>¿Por qué las bases de datos se representan con un cilindro?</h1> 
+        <div class="teorias">
+        <!--Primera teoria-->
+            <p class="d-inline-flex gap-1">
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                 Teoría de la influencia de la memoria de tambor
+                </a>
+            </p>
+            <div class="collapse" id="collapseExample2">
+                <div class="card card-body otras">
+                    <div class="info">
+                        <p>
+                        Esta teoría fue aplicada entre las décadas de 1930 y 1950. Cuando, anterior a la aparición de los discos magneticos, se utilizaba la memoria de tambor magnético entre otros dispositivos. 
+                        </p>
+                        <p>
+                        Estos dispositivos consitían en un cilindro metálico giratorio recubierto de material magnético, con cabezales de lectura/escritura distribuidos a lo largo de su superficie. La organización de los datos dependía directamente de la rotación del tambor, lo que implicaba un acceso secuencial condicinado por el movimiento de este.   
+                        </p>
+                    </div>
+                    <img src="./assets/tambormagnetico.jpg" alt="imagen de un tambor magnético" width="2556" height="1941" class="foto d-md-block d-sm-none">
+                   
+                </div>
+            </div>
+            <!--Segunda Teoría-->
+            <p class="d-inline-flex gap-1">
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  Teoria de la herencia del almacenamiento en discos magnéticos
+                </a>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    <div class="info">
+                        <p>
+                        Esta teoría sostiene que la representación cilíndrica de las bases de datos tiene origen en la arquitectura física de los primeros dispositivos de almacenamiento masivo, particularmente los discos duros tempranos.
+                        </p>
+                        <p>
+                        Durante la década de 1950 y 1960, sistemas como el IBM 305 RAMAC utilizaban múltiples platos magnéticos apilados verticalmente alrededor de un eje central. Etsa disposición generaba una estructura tridimensional que podía interpretarse como un cilindro al simplificarse visualmente. 
+                        </p>
+                        <p>Desde la perprectiva técnica, los datos no se organizaban en cilindros, sin embargo si existía el concepto de <span class="italica">Cilindro de almacenamiento</span>, que agrupaba pistas alineadas verticalmente a través de los diferentes platos. Fue por esto que se reforzó la asociación de "almacenamiento" con el cilindro </p>
+                    </div>
+                    <img src="./assets/discoduro.jpg" alt="Imagen IBM 305 RAMAC" width="800" height="800" class="foto d-md-block d-none">
+                </div>
+            </div>
+          
+           
+            <!--Tercera  teoria-->
+            <p class="d-inline-flex gap-1">
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+                 Teoría de la metáfora de la Persistencia
+                </a>
+            </p>
+            <div class="collapse" id="collapseExample3">
+                <div class="card card-body">
+                    <div class="info">
+                        <p>
+                        Esta teoría plantea que la representación de las bases de datos mediante un cilindro no busca reflejar su estructura interna ni su origen físico, sino comunicar visualmente una propiedad fundamental: <span class="negrita">la persitencia de los datos</span> 
+                        </p>
+                        <p>
+                        En los sistemas informáticos, la persistencia es la capacidad de la información de permaneceer almacenada de forma estable a lo largo del tiempo, independientemente de la ejecución de programas o del estado temporal del sistema. Es decir, os datos no desaparecen cuando se apaga el sistema, ni dependen de procesos momentáneos. Desde esta perspectiva, el cilindro funciona como un símbolo conceptual que transmite: <span class="negrita">Almacenamiento duradero, Independencia del procesamiento, Continuidad temporal y Abstracción del medio físico</span>
+                        </p>
+                    </div>
+                    <img src="./assets/cilindro.png" alt="imagen de un cilindro" width="760" height="410" class="foto d-md-block d-none">
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo de Investigación 3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><i class="fa-solid fa-heart-circle-plus"></i></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!--Barra de navegación donde está los links-->
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Trabajo 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../viws/trabajo2.html">Trabajo 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Trabajo 3</a>
+                            </li>
+                            
+                        </ul> 
+                        <form class="d-flex search" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+        </nav>
+    </header>
+    <main class="main-3">
+        <h1>Los diferentes tipos de bases de datos que hay, indicando ejemplo para cada tipo</h1>
+        <div class="contenido flex-lg-row align-items-center flex-column d-flex justify-content-center">
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">SEGÚN LA FLEXIBILIDAD Y EL CONTENIDO REGISTRADO</button>
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">BASES DE DATOS ESTÁTICAS Y DINÁMICAS</h5>
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <p>Las bases de Datos Dinámicas y Estáticas que se basan en cómo se comporta la información registrada. La diferencia reside en que en las Estáticas no se suele modificar la información, mientras que en las Dinámicas; como su nombre indica, dicha información se modifica con cierta frecuencia.</p>
+                </div>
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">BASES DE DATOS DE TEXTO COMPLETO / BIBLIOGRÁFICAS / DIRECTORIOS</h5>
+                    
+                </div>
+                <div class="offcanvas-body">
+                    <p>En las bases de datos de texto completo se suelen registrar todo el texto que se va a consultar, así se puede hacer una investigación extensa. En las bibiográficas, la información almacenada puede dar una noción de qué va el tema, una pincelada de lo que se puede investigar luego. Y por último, los directorios son solo se usa para orgaizar la información básica.</p>
+                </div>
+            </div>
+            <!--MODELO UTILIZADO PARA REGISTRAR LA INFORMACIÓN-->
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">SEGÚN EL MODELO UTILIZADO PARA REGISTRAR LA INFORMACIÓN</button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">RELACIONALES / NO RELACIONALES / ORIENTADAS A OBJETOS / MULTIDIMENSIONALES / DEDUCTORES / JERÁRQUICAS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <p class="mb-0">Las relacionales son aquellas que guardan la información en formato tablas. Las  No relacionales guardan gran cantidad de información, pero al contrario de las relacionales, no siguen un orden fijo. Por otro lado, la Orientada a Objetos guarda las piezas completas de la información, las Multidimensionales organizan los datos en formato capas para que puedan ser analizadas desde muchos puntos de vista y por último  las deductivas usan la lógica para sacra conslusiones nuevas a partir de los datos que ya se tiene, y las jerárquicas organizan todo los niveles de importancia. 
+                    </p>
+                    <div class="todosejemplos">
+                        <p class="ejemplos"><span>EJEMPLOS:</span></p>
+                        <p>Relacionales - Un Banco</p>
+                        <p>No Relacionales - Instagran (Cualquier red social)</p>
+                        <p>Relacionales - Un VideoJuego</p>
+                        <p>Multidimensional- Un Supermercado</p>            
+                        <p>Deductivas- Una aplicación que mide cuántas calorias deberías consumir</p>            
+                        <p>Jerárquicas - Un sistema de Archivado, por ejemplo del ordenador</p>            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
+
+

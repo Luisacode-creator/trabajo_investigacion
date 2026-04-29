@@ -1,0 +1,149 @@
+*{ 
+    font-family: 'Times New Roman', Times, serif;
+}
+body{ 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{ 
+    flex:1;
+    background-color:rgb(246, 236, 223) ; 
+}
+
+.navbar-brand{
+    font-size: 40px;
+}
+
+.collapse { 
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+h1{ 
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+}
+.btn-primary{ 
+    padding:10px; 
+    background-color:rgb(209, 209, 209); 
+    color:black; 
+    border:none;
+    margin:10px 0px 0px 10px; 
+    font-size: 20px;
+}
+.btn-primary:hover{ 
+    background-color: rgb(186, 186, 186);
+}
+.otras{ 
+    display:flex; 
+    flex-direction:row;  
+    justify-content: space-between;
+    border:2px solid black; 
+    margin:0px 20px; 
+    padding:20px; 
+}
+.info{ 
+    width:100%;
+    display:flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.info p{ 
+    font-size: 20px;
+}
+.teorias{ 
+    text-align: center;
+}
+.foto{ 
+    width:40%; 
+    height:auto;
+}
+.italica{ 
+    font-style: italic;
+}
+.negrita{ 
+    font-weight: bolder;
+}
+
+/*PAGINA 2: SEGUNDA INVESTIGACIÓN*/
+.introducion{
+    padding:20px; 
+    font-size: 20px;
+}
+
+
+.tarjetas{ 
+    display:flex;
+    justify-content:center; 
+
+}
+
+.card{ 
+    width:50%;
+    display:flex; 
+    flex-direction: column;
+    margin:30px; 
+    
+}
+.card-title{ 
+    text-align:center; 
+    font-weight:bold; 
+    font-size:25px; 
+}
+.card-text{
+    font-size:20px; 
+    padding:5px; 
+}
+.img-fluid{ 
+    width: 100%;
+    height:100%; 
+    padding:10px; 
+}
+.row-cols-2{ 
+    display: flex;
+    justify-content: center;
+}
+
+
+/*-*_*_*_*_*_*_*_*_*_*_*_*_*_PÁGINA 3*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*/
+
+.offcanvas-title,.ejemplos{ 
+    font-weight: bold;
+    margin-top:10px; 
+}
+.offcanvas-body{ 
+    font-size:20px; 
+}
+
+.todosejemplos p{ 
+    font-weight: bold;
+}
+.offcanvas-header{ 
+    background-color:rgb(43, 0, 255); 
+}
+.main-3 .btn-primary{ 
+    background-color: rgb(153, 152, 152);
+    border:4px solid rgb(43, 0, 255); 
+    width:400px; 
+    height:400px; 
+
+}
+
+
+@media (max-width:768px) {
+    .d-flex.search{ 
+        display:none !important; 
+    }
+    .tarjetas{ 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
